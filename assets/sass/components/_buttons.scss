@@ -1,0 +1,103 @@
+.theme-btn {
+	background: $theme-primary-color;
+	color: $white;
+	display: inline-block;
+	font-weight: 600;
+	padding: 15px 45px;
+	border: 0;
+	text-transform: capitalize;
+	-webkit-backface-visibility: hidden;
+	z-index: 1;
+	position: relative;
+	font-size: 16px;
+	clip-path: polygon(100% 0, 100% 75%, 88% 100%, 0 100%, 0 0);
+	transition: all .3 ease-in-out;
+
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $white;
+		background: $theme-primary-color-s2;
+	}
+
+
+
+	@include media-query(991px) {
+		font-size: 18px;
+		font-size: calc-rem-value(18);
+	}
+
+	@include media-query(767px) {
+		padding: 12px 18px;
+		font-size: 14px;
+		clip-path: polygon(100% 0, 100% 75%, 87% 100%, 0 100%, 0 0);
+	}
+}
+
+.theme-btn-s2 {
+	background: $cyan;
+	color: $text-color;
+	display: inline-block;
+	padding: 18px 27px;
+	text-transform: capitalize;
+	font-family: $heading-font;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 21px;
+	transition: all .3 ease-in-out;
+
+	i {
+		padding-left: 9px;
+		transition: all .3 ease-in-out;
+		&::before {
+			font-size: 15px;
+			line-height: 17px;
+			color: $text-color;
+		}
+	}
+
+	@include media-query(991px) {
+		font-size: 14px;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $text-color;
+	}
+
+
+	@include media-query(767px) {
+		padding: 12px 18px;
+		font-size: 13px;
+	}
+}
+
+
+
+.view-cart-btn {
+	@extend .theme-btn;
+	display: block;
+	margin-top: 15px;
+	padding: 10px 45px;
+
+
+
+	&:after {
+		display: none;
+	}
+
+	&:hover {
+		background-color: darken($theme-primary-color, 8%);
+	}
+
+	&.s1 {
+		background: $theme-primary-color-s2;
+
+		&:hover {
+			background-color: darken(#ddd, 8%);
+		}
+	}
+
+}

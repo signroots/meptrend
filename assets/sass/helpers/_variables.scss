@@ -1,0 +1,36 @@
+/*---------------------------
+	Fonts
+----------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+
+    
+
+
+// fonts
+$base-font-size: 15;
+$base-font: 'DM Sans', sans-serif;
+$heading-font: 'DM Sans', sans-serif;
+
+
+
+// color
+$dark-gray: #02245B;//
+$body-color: #687693;
+$white: #fff;
+$light: #E3E4E5;//
+$black: #000;
+$small-black: #BFBAC8;//
+$cyan: #F8F8F8;//
+
+$theme-primary-color: #FF5E14;//
+$theme-primary-color-s2: #02245B;//
+$body-bg-color: #fff;
+$section-bg-color: #F5F5F5;//
+$section-bg-color-s2: #163668;//
+$text-color: #02245B;//
+$text-color-s2: #FF5E14;//
+$text-light-color: #5F656F;//
+$heading-color: $dark-gray;
+$border-color: #E6E6E6;//
+$border-color-s2: #183769;//

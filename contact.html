@@ -165,7 +165,7 @@
 
                             </div>
                         </div>
-
+                        
                         <div class="wpo-contact-title">
                             <h2>Have Any Question?</h2>
                             <p>Get in touch for expert BIM MEP design engineering services. We are here to assist you with your project needs.</p>
@@ -173,26 +173,20 @@
                         <div class="wpo-contact-form-area">
 
 
-                            <form method="POST" class="contact-validation-active" id="contact-form-main" action="https://formspree.io/f/mblknweb">
-  <div>
-    <input type="text" class="form-control" name="name" id="name" placeholder="Your Name*" required>
-  </div>
-  <div>
-    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email*" required>
-  </div>
-  <div class="fullwidth">
-    <textarea class="form-control" name="message" id="note" placeholder="Message..." required></textarea>
-  </div>
-  <div class="submit-area">
-    <button type="submit" class="theme-btn" style="color: white;">Get in Touch</button>
-    <div id="loader" style="display:none;">
-      <i class="ti-reload"></i>
-    </div>
-  </div>
-  <div class="clearfix error-handling-messages">
-    <div id="success" style="display:none;">✅ Thank you, your message has been sent.</div>
-    <div id="error" style="display:none;">❌ Error occurred while sending email. Please try again later.</div>
-  </div>
+                            <form id="contact-form-main" 
+      action="https://formspree.io/f/mblknweb" 
+      method="POST">
+  
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <input type="text" name="phone" placeholder="Phone" required>
+  <input type="text" name="subject" placeholder="Subject" required>
+  <textarea name="message" placeholder="Message" required></textarea>
+  
+  <!-- Hidden redirect (optional) -->
+  <input type="hidden" name="_next" value="thankyou.html">
+  
+  <button type="submit">Send</button>
 </form>
 
 

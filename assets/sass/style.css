@@ -4394,7 +4394,7 @@ nav.navigation.navbar.navbar-expand-lg.navbar-light.sticky-header.sticky-on {
 }
 .wpo-site-footer .wpo-lower-footer .social-widget ul li a {
   color: #fff;
-  background: #FF5E14;
+  background: none;
   margin-bottom: 0;
   height: 40px;
   width: 40px;
@@ -10383,7 +10383,7 @@ nav.navigation.navbar.navbar-expand-lg.navbar-light.sticky-header.sticky-on {
     margin: 0;
     display: flex;
     gap: 10px;
-    justify-content: center; /* centers the whole row */
+    justify-content: left; /* centers the whole row */
 }
 
 .social-widget ul li {
@@ -10396,12 +10396,12 @@ nav.navigation.navbar.navbar-expand-lg.navbar-light.sticky-header.sticky-on {
     justify-content: center; /* horizontal centering */
     width: 45px;
     height: 45px;
-    background: #ff5722; /* orange background */
+    background: #ffffff00; /* orange background */
     color: #fff;         /* white icon */
     font-size: 20px;
     border-radius: 3px;  
     transition: all 0.3s ease;
-    text-align: center;
+    text-align: left;
 }
 
 .social-widget ul li a:hover {

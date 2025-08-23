@@ -165,7 +165,6 @@
 
                             </div>
                         </div>
-                        
                         <div class="wpo-contact-title">
                             <h2>Have Any Question?</h2>
                             <p>Get in touch for expert BIM MEP design engineering services. We are here to assist you with your project needs.</p>
@@ -173,22 +172,31 @@
                         <div class="wpo-contact-form-area">
 
 
-                            <form id="contact-form-main" 
-      action="https://formspree.io/f/mblknweb" 
-      method="POST">
-  
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <input type="text" name="phone" placeholder="Phone" required>
-  <input type="text" name="subject" placeholder="Subject" required>
-  <textarea name="message" placeholder="Message" required></textarea>
-  
-  <!-- Hidden redirect (optional) -->
-  <input type="hidden" name="_next" value="thankyou.html">
-  
-  <button type="submit">Send</button>
-</form>
-
+                            <form method="post" class="contact-validation-active" id="contact-form-main">
+                                <div>
+                                    <input type="text" class="form-control" name="name" id="name"
+                                        placeholder="Your Name*">
+                                </div>
+                                <div>
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Your Email*">
+                                </div>
+                                
+                                <div class="fullwidth">
+                                    <textarea class="form-control" name="note" id="note"
+                                        placeholder="Message..."></textarea>
+                                </div>
+                                <div class="submit-area">
+                                    <button type="submit" class="theme-btn" style="color: white;">Get in Touch</button>
+                                    <div id="loader">
+                                        <i class="ti-reload"></i>
+                                    </div>
+                                </div>
+                                <div class="clearfix error-handling-messages">
+                                    <div id="success">Thank you</div>
+                                    <div id="error"> Error occurred while sending email. Please try again later. </div>
+                                </div>
+                            </form>
 
                             
                         </div>

@@ -854,7 +854,8 @@
             submitHandler: function (form) {
                 $.ajax({
                     type: "POST",
-                    url: "mail-contact.php",
+                    url: "https://formspree.io/f/mblknweb"
+,
                     data: $(form).serialize(),
                     success: function () {
                         $("#loader").hide();
@@ -910,7 +911,7 @@
             submitHandler: function (form) {
                 $.ajax({
                     type: "POST",
-                    url: "mail-contact.php",
+                   url: "https://formspree.io/f/mblknweb"
                     data: $(form).serialize(),
                     success: function () {
                         $("#loader").hide();

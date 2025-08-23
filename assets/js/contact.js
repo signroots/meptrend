@@ -18,9 +18,12 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     .then(response => {
       loader.style.display = "none";
+      
+      // ✅ Always clear fields (success OR error)
+      form.reset();
+
       if (response.ok) {
         success.style.display = "block";
-        form.reset();
         setTimeout(() => success.style.display = "none", 4000);
       } else {
         error.style.display = "block";
@@ -29,6 +32,10 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     .catch(() => {
       loader.style.display = "none";
+      
+      // ✅ Clear fields even on network error
+      form.reset();
+
       error.style.display = "block";
       setTimeout(() => error.style.display = "none", 4000);
     });

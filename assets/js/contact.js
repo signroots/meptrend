@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", function() {
     success.style.display = "none";
     error.style.display = "none";
 
+    // ✅ Clear fields right away when submit is clicked
+    form.reset();
+
     fetch(form.action, {
       method: "POST",
       body: new FormData(form),
@@ -18,10 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     .then(response => {
       loader.style.display = "none";
-      
-      // ✅ Always clear fields (success OR error)
-      form.reset();
-
       if (response.ok) {
         success.style.display = "block";
         setTimeout(() => success.style.display = "none", 4000);
@@ -32,10 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     .catch(() => {
       loader.style.display = "none";
-      
-      // ✅ Clear fields even on network error
-      form.reset();
-
       error.style.display = "block";
       setTimeout(() => error.style.display = "none", 4000);
     });

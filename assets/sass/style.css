@@ -10409,3 +10409,11 @@ nav.navigation.navbar.navbar-expand-lg.navbar-light.sticky-header.sticky-on {
     color: #ff5722;        
 }
 
+/* For the last single card */
+.single-card {
+    display: flex;
+    justify-content: flex-start; /* Align left */
+}
+.single-card .engineering-card {
+    max-width: 48%; /* keep size similar to other cards */
+}

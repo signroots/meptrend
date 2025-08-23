@@ -10377,5 +10377,35 @@ nav.navigation.navbar.navbar-expand-lg.navbar-light.sticky-header.sticky-on {
     background-color: #cc5500; /* Darker shade on hover */
 }
 
+.social-widget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* centers the whole row */
+}
 
+.social-widget ul li {
+    display: inline-block;
+}
+
+.social-widget ul li a {
+    display: flex;
+    align-items: center;   /* vertical centering */
+    justify-content: center; /* horizontal centering */
+    width: 45px;
+    height: 45px;
+    background: #ff5722; /* orange background */
+    color: #fff;         /* white icon */
+    font-size: 20px;
+    border-radius: 3px;  
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.social-widget ul li a:hover {
+    background: #ffffff;   
+    color: #ff5722;        
+}
 

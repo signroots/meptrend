@@ -10417,3 +10417,44 @@ nav.navigation.navbar.navbar-expand-lg.navbar-light.sticky-header.sticky-on {
 .single-card .engineering-card {
     max-width: 48%; /* keep size similar to other cards */
 }
+
+#contact-form-main input,
+#contact-form-main textarea {
+  width: 100%;          /* Full width */
+  padding: 12px;        /* Inside spacing */
+  margin-bottom: 15px;  /* ⬅️ Space between fields */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+#contact-form-main textarea {
+  resize: none;         /* Prevent resizing (optional) */
+  min-height: 120px;    /* Bigger message box */
+}
+
+#contact-form-main button {
+  background: #FF5E14;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  margin: 20px 0;   /* Space before & after button */
+}
+
+#contact-form-main button:hover {
+  background: #034aa6;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+#contact-form-main button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}

@@ -854,7 +854,7 @@
             submitHandler: function (form) {
                 $.ajax({
                     type: "POST",
-                    url: "https://formspree.io/f/mblknweb"
+                    url: "https://formspree.io/f/mandwkjw"
 ,
                     data: $(form).serialize(),
                     success: function () {

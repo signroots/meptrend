@@ -2242,13 +2242,14 @@ img {
     color: #fff;
     font-weight: 700;      /* bolder for visibility */
     text-align: right;
-    padding: 10px 0;       /* extra tap area for fingers */
+    padding: 10px 15px 10px 0;  /* ⬅ adds 15px space on right */
   }
 
   .wpo-site-header #navbar > ul > li {
     margin-bottom: 18px;   /* spacing between menu items */
   }
 }
+
 
   .wpo-site-header #navbar > ul > li a:hover, .wpo-site-header #navbar > ul > li a.active {
     color: #1b1212;
@@ -2540,7 +2541,7 @@ img {
 
 @media (max-width: 991px) {
   .wpo-site-header #navbar > ul > li > a {
-    padding: 15px 30px;
+    padding: 15px 50px;
   }
 }
 @media (max-width: 991px) {

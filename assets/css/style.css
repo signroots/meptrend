@@ -8857,3 +8857,13 @@ body {
 }
 
 
+@media (max-width: 991px) {
+  #navbar ul.nav > li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* thin divider line */
+    padding: 12px 0; /* spacing for better tap area */
+  }
+
+  #navbar ul.nav > li:last-child {
+    border-bottom: none; /* remove line after last item */
+  }
+}

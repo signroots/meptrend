@@ -2237,13 +2237,21 @@ img {
 @media (max-width: 991px) {
   .wpo-site-header #navbar > ul > li a {
     display: block;
-    font-size: 15px;
-    font-size: 1rem;
+    font-size: 22px;       /* larger text for readability */
+    line-height: 1.6;      /* more breathing space */
     color: #fff;
-    font-weight: 600;
+    font-weight: 700;      /* bolder for visibility */
+    text-align: right;
+    padding: 10px 0;       /* extra tap area for fingers */
   }
+
+  .wpo-site-header #navbar > ul > li {
+    margin-bottom: 18px;   /* spacing between menu items */
+  }
+}
+
   .wpo-site-header #navbar > ul > li a:hover, .wpo-site-header #navbar > ul > li a.active {
-    color: #fff;
+    color: #1b1212;
   }
   .wpo-site-header #navbar > ul .sub-menu > li:last-child {
     border-bottom: 0;
@@ -2325,13 +2333,13 @@ img {
   .wpo-site-header #navbar {
     background: #243352;
     display: block !important;
-    width: 300px;
-    height: 100%;
+    width: 390px;
+    height: 90%;
     margin: 0;
     padding: 0;
     border: 0;
     position: fixed;
-    left: -320px;
+    left: 200px;
     top: 0px;
     z-index: 999999;
     opacity: 0;
